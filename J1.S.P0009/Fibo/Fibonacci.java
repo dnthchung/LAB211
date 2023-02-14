@@ -42,5 +42,23 @@ public class Fibonacci {
         }
         System.out.println();
     }
+    
+    
+    //fix
+        private static void displaySequence(int[] array) {
+        System.out.print("The sequence: ");
+//        System.out.println("The sequence: " + Arrays.toString(array));
+        for (int i = 0; i < array.length ; i++) {
+            if(i == array.length-1){
+                               System.out.print(array[i] + ". ");
+            }else {
+                System.out.print(array[i] + ", ");
+            }
+        }
+        System.out.println();
+    }
+  
+}
+
   
 }
