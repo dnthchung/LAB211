@@ -36,6 +36,16 @@ public class Main {
         //search numer
         linearSearch.search(array, searchNumber);
 
+        //fix
+        //search numer
+        int index = linearSearch.search(array, searchNumber);
+        //found
+        if(index != -1){
+            System.out.println("Found " + searchNumber + " at index " + index);
+        //not found
+        }else {
+            System.out.println("Not Found!!");
+        }
 
     }
 }
