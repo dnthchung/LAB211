@@ -48,6 +48,7 @@ public class LinearSearch {
         }
     }
 
+    //search
     void search(int[] array, int searchNumber) {
         for (int i = 0; i < array.length; i++) {
             if(searchNumber == array[i]) {
@@ -61,7 +62,16 @@ public class LinearSearch {
         }System.out.println("Not found.");
     }
     
-    
+    //fix    
+    //search - cô năng yêu cầu phải trả về index
+    public int search(int[] array, int searchNumber){
+        for (int i = 0; i < array.length; i++) {
+            if(searchNumber == array[i]){
+                return i;
+            }
+        }
+        return -1;
+    }
     
     
 }
