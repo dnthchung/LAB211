@@ -93,7 +93,7 @@ public class Utility {
     }
   }
 
-  // check String input
+  // check String input + trycatch() method to ok input
   public String getString(String message, String error, String regex) {
     while (true) {
       System.out.print(message);
