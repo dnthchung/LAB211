@@ -47,7 +47,7 @@ public class BubblerSort {
     }
     
     //ham sap xep
-    void sort(int[] array) {
+    void bubble_srt(int[] array) {
         int n = array.length;
         for (int i = 0; i < n - 1; i++)   // neu cho chay toi thang n thi  bi thua so luon phan tu (vidu index la 4 nma so luong phan tu la 5, co 5 phan tu nma chi can so sanh 4 lan)
             for (int j = 0; j < n - i - 1; j++) // n-i-1: so lan so sanh
@@ -57,5 +57,20 @@ public class BubblerSort {
                     array[j] = array[j + 1];
                     array[j + 1] = temp;
                 }
+    }
+    
+    or
+            public void bubble_srt(int a[]) {
+        int n = a.length;
+        int i, j, t = 0;
+        for (i = 0; i < n; i++) {
+            for (j = 1; j < (n - i); j++) {
+                if (a[j - 1] > a[j]) {
+                    t = a[j - 1];
+                    a[j - 1] = a[j];
+                    a[j] = t;
+                }
+            }
+        }
     }
 }
