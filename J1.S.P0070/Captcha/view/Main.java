@@ -28,6 +28,7 @@ public class Main {
                     break;
                 case 2:
                     input.setLocale(English);
+                    System.exit(0);
                     break;
                 case 3:
                     return;
