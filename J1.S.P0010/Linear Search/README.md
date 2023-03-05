@@ -7,3 +7,5 @@ LAB211 Assignment	Type:	Short Assignment
 
 Title
   	Linear search. 
+
+50 locs
