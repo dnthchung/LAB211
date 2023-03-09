@@ -42,9 +42,26 @@ public class Manage {
             listStudent.get(i).display();
         }
     }
-
+//display classification
     public void displayClassification() {
-        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+        HashMap<String, Double> hashMap = new HashMap<>();
+        hashMap = function.getPercentTypeStudent();
+        double sizeOfList = function.getListStudent().size();
+
+        System.out.println("--------Classification Info -----");
+        //loop form first to last element in hashmap
+        for (Map.Entry<String, Double> entry : hashMap.entrySet()) {
+            String key = entry.getKey();
+            double val = entry.getValue().doubleValue();
+            double percent = (val / sizeOfList) * 100;
+
+            System.out.format("%s: %.1f", key, percent);
+            System.out.println("%");
+        }
+
+        for (Map.Entry<String, Double> entry : hashMap.entrySet()) {
+
+        }
     }
 
     
